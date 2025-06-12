@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Profile Finder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>
+        <i class="fab fa-github"></i> GitHub Profile Finder
+      </h1>
+    </header>
+    <p>Here you can Search for a GitHub User</p>
+    <p>To view their Profiles & Repositories</p>
+    <div class="search-box">
+      <input type="text" id="username" placeholder="Please Enter GitHub username" />
+      <button onclick="getUser()">Search</button>
+      <button onclick="toggleDarkMode()">🌙</button>
+    </div>
+    <div id="profile" class="profile-card"></div>  
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
