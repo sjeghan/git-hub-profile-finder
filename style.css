@@ -1,0 +1,89 @@
+:root {
+  --bg-color: rgb(150, 173, 178);
+  --text-color: #000;
+  --card-bg: white;
+}
+
+body.dark {
+  --bg-color: #23232f;
+  --text-color: #eee;
+  --card-bg: #1e1e1e;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #1041c6;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.profile-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.profile-card img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.profile-card h2 {
+  margin: 10px 0;
+}
+
+.profile-card a {
+  text-decoration:none;
+  color: #0366d6;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.repo-list {
+  text-align: left;
+  margin-top: 20px;
+}
+.repo-list a {
+  display: block;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
